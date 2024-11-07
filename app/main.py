@@ -15,4 +15,4 @@ app.include_router(stocks.router, prefix="/stocks", tags=["Stocks"])
 
 @app.get("/")
 async def root():
-    return {"message": f"Welcome to the {settings.api_name}"}
+    return {"message": f"Welcome to {settings.api_name}"}
